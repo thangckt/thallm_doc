@@ -4172,6 +4172,41 @@
 
 
 
+
+
+<p><span class="doc-section-title">Modules:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api" href="#thml.llm_chat.post_api">post_api</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>This module contains the chatbot classes and methods to work with text generation models.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright" href="#thml.llm_chat.web_playwright">web_playwright</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_requests" href="#thml.llm_chat.web_requests">web_requests</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -4196,6 +4231,41 @@
     <div class="doc doc-contents ">
 
         <p>This module contains the chatbot classes and methods to work with text generation models.</p>
+
+
+
+
+
+<p><span class="doc-section-title">Modules:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_google" href="#thml.llm_chat.post_api.chat_google">chat_google</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Build a chatbot using Google's Gemini API</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_gpt4free" href="#thml.llm_chat.post_api.chat_gpt4free">chat_gpt4free</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai" href="#thml.llm_chat.post_api.chat_openai">chat_openai</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Using chatGPT API to build a chatbot</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
 
 
 
@@ -4230,6 +4300,27 @@
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_google.Google" href="#thml.llm_chat.post_api.chat_google.Google">Google</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Class for chatbot using Google's Gemini API via <a href="https://ai.google.dev/tutorials/python_quickstart">google.generativeai</a> package</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -4258,7 +4349,7 @@
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>api_key</code></b>
+            <b><code>api_key</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -4302,6 +4393,46 @@
           –
           <div class="doc-md-description">
             <p>The maximum number of tokens to generate in the response.</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_google.Google.ask" href="#thml.llm_chat.post_api.chat_google.Google.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask Google Gemini a question and return the answer.</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_google.Google.avail_models" href="#thml.llm_chat.post_api.chat_google.Google.avail_models">avail_models</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_google.Google.params" href="#thml.llm_chat.post_api.chat_google.Google.params">params</a></code></b>
+          –
+          <div class="doc-md-description">
+            
           </div>
         </li>
     </ul>
@@ -4374,7 +4505,7 @@
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;hello my friend&#39;</code>
 )
@@ -4432,6 +4563,34 @@
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_gpt4free.FreeChat" href="#thml.llm_chat.post_api.chat_gpt4free.FreeChat">FreeChat</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Class for chatbot using reverse enginerring models.</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_gpt4free.FreeImage" href="#thml.llm_chat.post_api.chat_gpt4free.FreeImage">FreeImage</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Class for image generation using reverse-enginered models.</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -4453,7 +4612,7 @@
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="thml.llm_chat.post_api.chat_gpt4free._Base">_Base</span></code></p>
+              Bases: <code>_Base</code></p>
 
 
         <p>Class for chatbot using reverse enginerring models.</p>
@@ -4520,6 +4679,53 @@
     </ul>
 
         
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_gpt4free.FreeChat.ask" href="#thml.llm_chat.post_api.chat_gpt4free.FreeChat.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask the chatbot a question.</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_gpt4free.FreeChat.params" href="#thml.llm_chat.post_api.chat_gpt4free.FreeChat.params">params</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_gpt4free.FreeChat.avail_models" href="#thml.llm_chat.post_api.chat_gpt4free.FreeChat.avail_models">avail_models</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_gpt4free.FreeChat.avail_providers" href="#thml.llm_chat.post_api.chat_gpt4free.FreeChat.avail_providers">avail_providers</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
 
 
 
@@ -4648,6 +4854,15 @@ Args:
 
 
 
+
+
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -4705,6 +4920,41 @@ Args:
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.BaseChat" href="#thml.llm_chat.post_api.chat_openai.BaseChat">BaseChat</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Base class for chatbot, to define common attributes and methods for chatbot</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.Openai" href="#thml.llm_chat.post_api.chat_openai.Openai">Openai</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Class for chatbot using OpenAI API via <code>openai</code> package</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.Post" href="#thml.llm_chat.post_api.chat_openai.Post">Post</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Class for chatbot using OpenAI API via POST request</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -4729,6 +4979,41 @@ Args:
 
 
         <p>Base class for chatbot, to define common attributes and methods for chatbot</p>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.BaseChat.save_history" href="#thml.llm_chat.post_api.chat_openai.BaseChat.save_history">save_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.BaseChat.export_history" href="#thml.llm_chat.post_api.chat_openai.BaseChat.export_history">export_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.BaseChat.load_history" href="#thml.llm_chat.post_api.chat_openai.BaseChat.load_history">load_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              
+            </div>
+          </li>
+    </ul>
+
+
 
 
 
@@ -4808,7 +5093,7 @@ Args:
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.BaseChat" href="#thml.llm_chat.post_api.chat_openai.BaseChat">BaseChat</a></code></p>
+              Bases: <code>BaseChat</code></p>
 
 
         <p>Class for chatbot using OpenAI API via <code>openai</code> package</p>
@@ -4817,7 +5102,7 @@ Args:
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>service</code></b>
+            <b><code>service</code></b>
               (<code>str</code>, default:
                   <code>&#39;openai&#39;</code>
 )
@@ -4893,6 +5178,67 @@ Args:
           –
           <div class="doc-md-description">
             <p>The prompt to use for the system.</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.Openai.save_history" href="#thml.llm_chat.post_api.chat_openai.Openai.save_history">save_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.Openai.export_history" href="#thml.llm_chat.post_api.chat_openai.Openai.export_history">export_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.Openai.load_history" href="#thml.llm_chat.post_api.chat_openai.Openai.load_history">load_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.Openai.ask" href="#thml.llm_chat.post_api.chat_openai.Openai.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask GPT-4 a question and return the answer. Use new openai API</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.Openai.params" href="#thml.llm_chat.post_api.chat_openai.Openai.params">params</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.Openai.avail_models" href="#thml.llm_chat.post_api.chat_openai.Openai.avail_models">avail_models</a></code></b>
+          –
+          <div class="doc-md-description">
+            
           </div>
         </li>
     </ul>
@@ -5010,7 +5356,7 @@ Args:
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;hello&#39;</code>
 )
@@ -5085,8 +5431,8 @@ Args:
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>**kwargs</code></b>
-              (<code><span title="typing.Any">Any</span></code>, default:
+            <b><code>**kwargs</code></b>
+              (<code>Any</code>, default:
                   <code>{}</code>
 )
           –
@@ -5107,6 +5453,46 @@ Args:
 <li>Make request python faster: <a href="https://skillshats.com/blogs/optimize-python-requests-for-faster-performance/">https://skillshats.com/blogs/optimize-python-requests-for-faster-performance/</a></li>
 </ul>
 </details>
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.Post.ask" href="#thml.llm_chat.post_api.chat_openai.Post.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.Post.params" href="#thml.llm_chat.post_api.chat_openai.Post.params">params</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.post_api.chat_openai.Post.avail_models" href="#thml.llm_chat.post_api.chat_openai.Post.avail_models">avail_models</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
+
 
 
 
@@ -5213,6 +5599,62 @@ Args:
 
 
 
+
+
+<p><span class="doc-section-title">Modules:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt" href="#thml.llm_chat.web_playwright.chatgpt">chatgpt</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude" href="#thml.llm_chat.web_playwright.claude">claude</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright" href="#thml.llm_chat.web_playwright.copilot_playwright">copilot_playwright</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini" href="#thml.llm_chat.web_playwright.gemini">gemini</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama" href="#thml.llm_chat.web_playwright.llama">llama</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral" href="#thml.llm_chat.web_playwright.mistral">mistral</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -5238,6 +5680,27 @@ Args:
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt">WebChatgpt</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Interacte with chatgpt web</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -5259,7 +5722,7 @@ Args:
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="thml.llm_chat.web_playwright._base_class.WebBase">WebBase</span></code></p>
+              Bases: <code>WebBase</code></p>
 
 
         <p>Interacte with chatgpt web</p>
@@ -5269,7 +5732,7 @@ Args:
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>cookie_file</code></b>
+            <b><code>cookie_file</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -5279,7 +5742,7 @@ Args:
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>proxy</code></b>
+            <b><code>proxy</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -5289,7 +5752,7 @@ Args:
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>chat_id</code></b>
+            <b><code>chat_id</code></b>
               (<code>str</code>, default:
                   <code>&#39;temporary&#39;</code>
 )
@@ -5300,6 +5763,166 @@ If "id", use <code>chat_id</code>. If <code>chat_id</code> is not be found on th
 If "last", use last chat.
 If "temporary", use temporary chat (need to go wedsite to turn on this feature at the first time login of an account).
 If "new", start new chat.</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.ask" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask and get reponse from web</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.get_chat_history" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.get_chat_history">get_chat_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>alias of get_all_messages() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.close" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.close">close</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Alias of _close_page() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.send_prompt" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.send_prompt">send_prompt</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Submit prompt text</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.get_last_ai_message" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.get_last_ai_message">get_last_ai_message</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get the last AI message</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.get_all_messages" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.get_all_messages">get_all_messages</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get all messages by user and AI</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.get_all_chat_id" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.get_all_chat_id">get_all_chat_id</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get all conversation ids</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.get_last_chat_id" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.get_last_chat_id">get_last_chat_id</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get all conversation ids</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.browser_kwargs" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.browser_kwargs">browser_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.context_kwargs" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.context_kwargs">context_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.device" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.device">device</a></code></b>
+              (<code>str</code>)
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.page" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.page">page</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.send_count" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.send_count">send_count</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.base_url" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.base_url">base_url</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.cookie_file" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.cookie_file">cookie_file</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.chat_id" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.chat_id">chat_id</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.login" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.login">login</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.prompt_textarea" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.prompt_textarea">prompt_textarea</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.send_button" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.send_button">send_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.chatgpt.WebChatgpt.stop_button" href="#thml.llm_chat.web_playwright.chatgpt.WebChatgpt.stop_button">stop_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
           </div>
         </li>
     </ul>
@@ -5562,7 +6185,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -5643,7 +6266,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -5773,6 +6396,27 @@ If "new", start new chat.</p>
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude" href="#thml.llm_chat.web_playwright.claude.WebClaude">WebClaude</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Interacte with chatgpt web</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -5794,7 +6438,7 @@ If "new", start new chat.</p>
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="thml.llm_chat.web_playwright._base_class.WebBase">WebBase</span></code></p>
+              Bases: <code>WebBase</code></p>
 
 
         <p>Interacte with chatgpt web</p>
@@ -5804,7 +6448,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>cookie_file</code></b>
+            <b><code>cookie_file</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -5814,7 +6458,7 @@ If "new", start new chat.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>proxy</code></b>
+            <b><code>proxy</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -5824,7 +6468,7 @@ If "new", start new chat.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>chat_id</code></b>
+            <b><code>chat_id</code></b>
               (<code>str</code>, default:
                   <code>&#39;last&#39;</code>
 )
@@ -5834,6 +6478,152 @@ If "new", start new chat.</p>
 If "id", use <code>chat_id</code>. If <code>chat_id</code> is not be found on the web, fallback to <code>chat_id="last"</code>.
 If "last", use last_id.
 If "new", start new chat.</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.ask" href="#thml.llm_chat.web_playwright.claude.WebClaude.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask and get reponse from web</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.get_chat_history" href="#thml.llm_chat.web_playwright.claude.WebClaude.get_chat_history">get_chat_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>alias of get_all_messages() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.close" href="#thml.llm_chat.web_playwright.claude.WebClaude.close">close</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Alias of _close_page() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.send_prompt" href="#thml.llm_chat.web_playwright.claude.WebClaude.send_prompt">send_prompt</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Submit prompt text</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.get_last_ai_message" href="#thml.llm_chat.web_playwright.claude.WebClaude.get_last_ai_message">get_last_ai_message</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get the last AI message</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.get_all_chat_id" href="#thml.llm_chat.web_playwright.claude.WebClaude.get_all_chat_id">get_all_chat_id</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get all conversation ids</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.get_last_chat_id" href="#thml.llm_chat.web_playwright.claude.WebClaude.get_last_chat_id">get_last_chat_id</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get all conversation ids</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.browser_kwargs" href="#thml.llm_chat.web_playwright.claude.WebClaude.browser_kwargs">browser_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.context_kwargs" href="#thml.llm_chat.web_playwright.claude.WebClaude.context_kwargs">context_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.device" href="#thml.llm_chat.web_playwright.claude.WebClaude.device">device</a></code></b>
+              (<code>str</code>)
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.page" href="#thml.llm_chat.web_playwright.claude.WebClaude.page">page</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.send_count" href="#thml.llm_chat.web_playwright.claude.WebClaude.send_count">send_count</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.base_url" href="#thml.llm_chat.web_playwright.claude.WebClaude.base_url">base_url</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.cookie_file" href="#thml.llm_chat.web_playwright.claude.WebClaude.cookie_file">cookie_file</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.chat_id" href="#thml.llm_chat.web_playwright.claude.WebClaude.chat_id">chat_id</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.prompt_textarea" href="#thml.llm_chat.web_playwright.claude.WebClaude.prompt_textarea">prompt_textarea</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.send_button" href="#thml.llm_chat.web_playwright.claude.WebClaude.send_button">send_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.claude.WebClaude.stop_button" href="#thml.llm_chat.web_playwright.claude.WebClaude.stop_button">stop_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
           </div>
         </li>
     </ul>
@@ -6077,7 +6867,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -6158,7 +6948,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -6267,6 +7057,27 @@ If "new", start new chat.</p>
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot">WebCopilot</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Interacte with chatgpt web</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -6288,7 +7099,7 @@ If "new", start new chat.</p>
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="thml.llm_chat.web_playwright._base_class.WebBase">WebBase</span></code></p>
+              Bases: <code>WebBase</code></p>
 
 
         <p>Interacte with chatgpt web</p>
@@ -6298,7 +7109,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>cookie_file</code></b>
+            <b><code>cookie_file</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -6308,13 +7119,166 @@ If "new", start new chat.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>proxy</code></b>
+            <b><code>proxy</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
           –
           <div class="doc-md-description">
             <p>proxy server. e.g., "<a href="http://something.com:8080">http://something.com:8080</a>"</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.ask" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask and get reponse from web</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.get_chat_history" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.get_chat_history">get_chat_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>alias of get_all_messages() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.close" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.close">close</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Alias of _close_page() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.send_prompt" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.send_prompt">send_prompt</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Submit prompt text</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.get_last_ai_message" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.get_last_ai_message">get_last_ai_message</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get the last AI message</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.get_last_ai_reference" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.get_last_ai_reference">get_last_ai_reference</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get the references in last AI message</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.get_all_messages" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.get_all_messages">get_all_messages</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get all messages by user and AI</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.browser_kwargs" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.browser_kwargs">browser_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.context_kwargs" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.context_kwargs">context_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.device" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.device">device</a></code></b>
+              (<code>str</code>)
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.page" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.page">page</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.send_count" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.send_count">send_count</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.base_url" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.base_url">base_url</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.cookie_file" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.cookie_file">cookie_file</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.prompt_textarea" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.prompt_textarea">prompt_textarea</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.send_button" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.send_button">send_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.stop_button" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.stop_button">stop_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.upload_image_button" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.upload_image_button">upload_image_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.upload_file_button" href="#thml.llm_chat.web_playwright.copilot_playwright.WebCopilot.upload_file_button">upload_file_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
           </div>
         </li>
     </ul>
@@ -6577,7 +7541,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -6658,7 +7622,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -6767,6 +7731,27 @@ If "new", start new chat.</p>
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini" href="#thml.llm_chat.web_playwright.gemini.WebGemini">WebGemini</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Interacte with chatgpt web</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -6788,7 +7773,7 @@ If "new", start new chat.</p>
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="thml.llm_chat.web_playwright._base_class.WebBase">WebBase</span></code></p>
+              Bases: <code>WebBase</code></p>
 
 
         <p>Interacte with chatgpt web</p>
@@ -6798,7 +7783,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>cookie_file</code></b>
+            <b><code>cookie_file</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -6808,13 +7793,138 @@ If "new", start new chat.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>proxy</code></b>
+            <b><code>proxy</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
           –
           <div class="doc-md-description">
             <p>proxy server. e.g., "<a href="http://something.com:8080">http://something.com:8080</a>"</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.ask" href="#thml.llm_chat.web_playwright.gemini.WebGemini.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask and get reponse from web</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.get_chat_history" href="#thml.llm_chat.web_playwright.gemini.WebGemini.get_chat_history">get_chat_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>alias of get_all_messages() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.close" href="#thml.llm_chat.web_playwright.gemini.WebGemini.close">close</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Alias of _close_page() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.send_prompt" href="#thml.llm_chat.web_playwright.gemini.WebGemini.send_prompt">send_prompt</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Submit prompt text</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.get_last_message" href="#thml.llm_chat.web_playwright.gemini.WebGemini.get_last_message">get_last_message</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get the last AI message</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.get_all_messages" href="#thml.llm_chat.web_playwright.gemini.WebGemini.get_all_messages">get_all_messages</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get all messages by user and AI</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.up_load_file" href="#thml.llm_chat.web_playwright.gemini.WebGemini.up_load_file">up_load_file</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get text</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.browser_kwargs" href="#thml.llm_chat.web_playwright.gemini.WebGemini.browser_kwargs">browser_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.context_kwargs" href="#thml.llm_chat.web_playwright.gemini.WebGemini.context_kwargs">context_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.device" href="#thml.llm_chat.web_playwright.gemini.WebGemini.device">device</a></code></b>
+              (<code>str</code>)
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.page" href="#thml.llm_chat.web_playwright.gemini.WebGemini.page">page</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.send_count" href="#thml.llm_chat.web_playwright.gemini.WebGemini.send_count">send_count</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.base_url" href="#thml.llm_chat.web_playwright.gemini.WebGemini.base_url">base_url</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.cookie_file" href="#thml.llm_chat.web_playwright.gemini.WebGemini.cookie_file">cookie_file</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.gemini.WebGemini.prompt_textarea" href="#thml.llm_chat.web_playwright.gemini.WebGemini.prompt_textarea">prompt_textarea</a></code></b>
+          –
+          <div class="doc-md-description">
+            
           </div>
         </li>
     </ul>
@@ -7001,7 +8111,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -7082,7 +8192,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -7191,6 +8301,27 @@ If "new", start new chat.</p>
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama" href="#thml.llm_chat.web_playwright.llama.WebLlama">WebLlama</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Interacte with chatgpt web</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -7212,7 +8343,7 @@ If "new", start new chat.</p>
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="thml.llm_chat.web_playwright._base_class.WebBase">WebBase</span></code></p>
+              Bases: <code>WebBase</code></p>
 
 
         <p>Interacte with chatgpt web</p>
@@ -7222,7 +8353,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>cookie_file</code></b>
+            <b><code>cookie_file</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -7232,7 +8363,7 @@ If "new", start new chat.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>proxy</code></b>
+            <b><code>proxy</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -7242,7 +8373,7 @@ If "new", start new chat.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>chat_id</code></b>
+            <b><code>chat_id</code></b>
               (<code>str</code>, default:
                   <code>&#39;last&#39;</code>
 )
@@ -7252,6 +8383,152 @@ If "new", start new chat.</p>
 If "id", use <code>chat_id</code>. If <code>chat_id</code> is not be found on the web, fallback to <code>chat_id="last"</code>.
 If "last", use last_id.
 If "new", start new chat.</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.ask" href="#thml.llm_chat.web_playwright.llama.WebLlama.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask and get reponse from web</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.get_chat_history" href="#thml.llm_chat.web_playwright.llama.WebLlama.get_chat_history">get_chat_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>alias of get_all_messages() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.close" href="#thml.llm_chat.web_playwright.llama.WebLlama.close">close</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Alias of _close_page() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.send_prompt" href="#thml.llm_chat.web_playwright.llama.WebLlama.send_prompt">send_prompt</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Submit prompt text</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.get_last_ai_message" href="#thml.llm_chat.web_playwright.llama.WebLlama.get_last_ai_message">get_last_ai_message</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get the last AI message</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.get_all_chat_id" href="#thml.llm_chat.web_playwright.llama.WebLlama.get_all_chat_id">get_all_chat_id</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get all conversation ids</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.get_last_chat_id" href="#thml.llm_chat.web_playwright.llama.WebLlama.get_last_chat_id">get_last_chat_id</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get all conversation ids</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.browser_kwargs" href="#thml.llm_chat.web_playwright.llama.WebLlama.browser_kwargs">browser_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.context_kwargs" href="#thml.llm_chat.web_playwright.llama.WebLlama.context_kwargs">context_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.device" href="#thml.llm_chat.web_playwright.llama.WebLlama.device">device</a></code></b>
+              (<code>str</code>)
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.page" href="#thml.llm_chat.web_playwright.llama.WebLlama.page">page</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.send_count" href="#thml.llm_chat.web_playwright.llama.WebLlama.send_count">send_count</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.base_url" href="#thml.llm_chat.web_playwright.llama.WebLlama.base_url">base_url</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.cookie_file" href="#thml.llm_chat.web_playwright.llama.WebLlama.cookie_file">cookie_file</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.chat_id" href="#thml.llm_chat.web_playwright.llama.WebLlama.chat_id">chat_id</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.prompt_textarea" href="#thml.llm_chat.web_playwright.llama.WebLlama.prompt_textarea">prompt_textarea</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.send_button" href="#thml.llm_chat.web_playwright.llama.WebLlama.send_button">send_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.llama.WebLlama.stop_button" href="#thml.llm_chat.web_playwright.llama.WebLlama.stop_button">stop_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
           </div>
         </li>
     </ul>
@@ -7495,7 +8772,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -7576,7 +8853,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -7685,6 +8962,27 @@ If "new", start new chat.</p>
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral" href="#thml.llm_chat.web_playwright.mistral.WebMistral">WebMistral</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Interacte with chatgpt web</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -7706,7 +9004,7 @@ If "new", start new chat.</p>
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="thml.llm_chat.web_playwright._base_class.WebBase">WebBase</span></code></p>
+              Bases: <code>WebBase</code></p>
 
 
         <p>Interacte with chatgpt web</p>
@@ -7716,7 +9014,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>cookie_file</code></b>
+            <b><code>cookie_file</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -7726,7 +9024,7 @@ If "new", start new chat.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>proxy</code></b>
+            <b><code>proxy</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -7736,7 +9034,7 @@ If "new", start new chat.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>chat_id</code></b>
+            <b><code>chat_id</code></b>
               (<code>str</code>, default:
                   <code>&#39;last&#39;</code>
 )
@@ -7746,6 +9044,152 @@ If "new", start new chat.</p>
 If "id", use <code>chat_id</code>. If <code>chat_id</code> is not be found on the web, fallback to <code>chat_id="last"</code>.
 If "last", use last_id.
 If "new", start new chat.</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.ask" href="#thml.llm_chat.web_playwright.mistral.WebMistral.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask and get reponse from web</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.get_chat_history" href="#thml.llm_chat.web_playwright.mistral.WebMistral.get_chat_history">get_chat_history</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>alias of get_all_messages() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.close" href="#thml.llm_chat.web_playwright.mistral.WebMistral.close">close</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Alias of _close_page() method, but in sync mode</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.send_prompt" href="#thml.llm_chat.web_playwright.mistral.WebMistral.send_prompt">send_prompt</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Submit prompt text</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.get_last_ai_message" href="#thml.llm_chat.web_playwright.mistral.WebMistral.get_last_ai_message">get_last_ai_message</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get the last AI message</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.get_all_chat_id" href="#thml.llm_chat.web_playwright.mistral.WebMistral.get_all_chat_id">get_all_chat_id</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get all conversation ids</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.get_last_chat_id" href="#thml.llm_chat.web_playwright.mistral.WebMistral.get_last_chat_id">get_last_chat_id</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get all conversation ids</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.browser_kwargs" href="#thml.llm_chat.web_playwright.mistral.WebMistral.browser_kwargs">browser_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.context_kwargs" href="#thml.llm_chat.web_playwright.mistral.WebMistral.context_kwargs">context_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.device" href="#thml.llm_chat.web_playwright.mistral.WebMistral.device">device</a></code></b>
+              (<code>str</code>)
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.page" href="#thml.llm_chat.web_playwright.mistral.WebMistral.page">page</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.send_count" href="#thml.llm_chat.web_playwright.mistral.WebMistral.send_count">send_count</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.base_url" href="#thml.llm_chat.web_playwright.mistral.WebMistral.base_url">base_url</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.cookie_file" href="#thml.llm_chat.web_playwright.mistral.WebMistral.cookie_file">cookie_file</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.chat_id" href="#thml.llm_chat.web_playwright.mistral.WebMistral.chat_id">chat_id</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.prompt_textarea" href="#thml.llm_chat.web_playwright.mistral.WebMistral.prompt_textarea">prompt_textarea</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.send_button" href="#thml.llm_chat.web_playwright.mistral.WebMistral.send_button">send_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_playwright.mistral.WebMistral.stop_button" href="#thml.llm_chat.web_playwright.mistral.WebMistral.stop_button">stop_button</a></code></b>
+          –
+          <div class="doc-md-description">
+            
           </div>
         </li>
     </ul>
@@ -7989,7 +9433,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -8070,7 +9514,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>, default:
                   <code>&#39;Hello, are you gpt-4o?&#39;</code>
 )
@@ -8186,6 +9630,27 @@ If "new", start new chat.</p>
 
 
 
+
+
+<p><span class="doc-section-title">Modules:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_requests.bing_copilot" href="#thml.llm_chat.web_requests.bing_copilot">bing_copilot</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -8208,6 +9673,39 @@ If "new", start new chat.</p>
 <a href="#thml.llm_chat.web_requests.bing_copilot" class="headerlink" title="Permanent link">&para;</a></h4>
 
     <div class="doc doc-contents ">
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_requests.bing_copilot.RWebCopilot" href="#thml.llm_chat.web_requests.bing_copilot.RWebCopilot">RWebCopilot</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Reverse-engineered Bing/Edge Copilot via Web browser.</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Functions:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_requests.bing_copilot.response_parser" href="#thml.llm_chat.web_requests.bing_copilot.response_parser">response_parser</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Parse the response from the re_edge_gpt chatbot</p>
+            </div>
+          </li>
+    </ul>
+
+
 
 
 
@@ -8240,7 +9738,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>cookie_file</code></b>
+            <b><code>cookie_file</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -8250,13 +9748,60 @@ If "new", start new chat.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>conversation_style</code></b>
+            <b><code>conversation_style</code></b>
               (<code>str</code>, default:
                   <code>&#39;precise&#39;</code>
 )
           –
           <div class="doc-md-description">
             <p>The conversation style. Available options: 'creative', 'balanced', 'precise'</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_requests.bing_copilot.RWebCopilot.ask" href="#thml.llm_chat.web_requests.bing_copilot.RWebCopilot.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask the bot a question</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_requests.bing_copilot.RWebCopilot.cookie_file" href="#thml.llm_chat.web_requests.bing_copilot.RWebCopilot.cookie_file">cookie_file</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_requests.bing_copilot.RWebCopilot.bot" href="#thml.llm_chat.web_requests.bing_copilot.RWebCopilot.bot">bot</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.llm_chat.web_requests.bing_copilot.RWebCopilot.conversation_style" href="#thml.llm_chat.web_requests.bing_copilot.RWebCopilot.conversation_style">conversation_style</a></code></b>
+          –
+          <div class="doc-md-description">
+            
           </div>
         </li>
     </ul>
@@ -8348,7 +9893,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>prompt</code></b>
+            <b><code>prompt</code></b>
               (<code>str</code>)
           –
           <div class="doc-md-description">
@@ -8361,7 +9906,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-              <code><span title="typing.Union">Union</span>[str, dict[str, list]]</code>
+              <code>Union[str, dict[str, list]]</code>
           –
           <div class="doc-md-description">
             <p>dict[str, list[str]]: final_text, references</p>
@@ -8399,7 +9944,7 @@ If "new", start new chat.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>response</code></b>
+            <b><code>response</code></b>
               (<code>dict</code>)
           –
           <div class="doc-md-description">
@@ -8543,7 +10088,7 @@ If "new", start new chat.</p>
     
       <script src="../assets/javascripts/bundle.9b94f2f7.min.js"></script>
       
-        <script src="../_extra_theme/extra_js/gg_adsense.js"></script>
+        <script src="../1thang_js/gas_ip_logger.js"></script>
       
     
   </body>

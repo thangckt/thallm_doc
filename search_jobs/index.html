@@ -1692,6 +1692,41 @@
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed" href="#thml.search.jobs.Indeed">Indeed</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired" href="#thml.search.jobs.SimplyHired">SimplyHired</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.LinkedIn" href="#thml.search.jobs.LinkedIn">LinkedIn</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
+
+
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -1713,8 +1748,104 @@
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="thml.search.jobs._JobBase">_JobBase</span></code></p>
+              Bases: <code>_JobBase</code></p>
 
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed.search_jobs" href="#thml.search.jobs.Indeed.search_jobs">search_jobs</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Search jobs on the website</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed.get_job_single_page" href="#thml.search.jobs.Indeed.get_job_single_page">get_job_single_page</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get jobs from search result on single page</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed.get_job_multi_pages" href="#thml.search.jobs.Indeed.get_job_multi_pages">get_job_multi_pages</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get jobs from multi pages</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed.get_job_detail" href="#thml.search.jobs.Indeed.get_job_detail">get_job_detail</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get details of jobs from job lists</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed.browser_kwargs" href="#thml.search.jobs.Indeed.browser_kwargs">browser_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed.context_kwargs" href="#thml.search.jobs.Indeed.context_kwargs">context_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed.page" href="#thml.search.jobs.Indeed.page">page</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed.max_jobs" href="#thml.search.jobs.Indeed.max_jobs">max_jobs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed.jobs" href="#thml.search.jobs.Indeed.jobs">jobs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed.country" href="#thml.search.jobs.Indeed.country">country</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.Indeed.base_url" href="#thml.search.jobs.Indeed.base_url">base_url</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
 
 
 
@@ -1879,7 +2010,7 @@
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>search_string</code></b>
+            <b><code>search_string</code></b>
               (<code>str</code>, default:
                   <code>&#39;Molecular Dynamics Simulation&#39;</code>
 )
@@ -1889,7 +2020,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>location</code></b>
+            <b><code>location</code></b>
               (<code>str</code>, default:
                   <code>&#39;United States&#39;</code>
 )
@@ -1899,7 +2030,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>filters</code></b>
+            <b><code>filters</code></b>
               (<code>dict</code>, default:
                   <code>None</code>
 )
@@ -1909,7 +2040,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>detail</code></b>
+            <b><code>detail</code></b>
               (<code>bool</code>, default:
                   <code>False</code>
 )
@@ -1919,7 +2050,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>max_jobs</code></b>
+            <b><code>max_jobs</code></b>
               (<code>int</code>, default:
                   <code>100</code>
 )
@@ -2028,8 +2159,104 @@
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="thml.search.jobs._JobBase">_JobBase</span></code></p>
+              Bases: <code>_JobBase</code></p>
 
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired.search_jobs" href="#thml.search.jobs.SimplyHired.search_jobs">search_jobs</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Search jobs on the website</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired.get_job_single_page" href="#thml.search.jobs.SimplyHired.get_job_single_page">get_job_single_page</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get jobs from search result on single page</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired.get_job_multi_pages" href="#thml.search.jobs.SimplyHired.get_job_multi_pages">get_job_multi_pages</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get jobs from multi pages</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired.get_job_detail" href="#thml.search.jobs.SimplyHired.get_job_detail">get_job_detail</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get details of jobs from job lists</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired.browser_kwargs" href="#thml.search.jobs.SimplyHired.browser_kwargs">browser_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired.context_kwargs" href="#thml.search.jobs.SimplyHired.context_kwargs">context_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired.page" href="#thml.search.jobs.SimplyHired.page">page</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired.max_jobs" href="#thml.search.jobs.SimplyHired.max_jobs">max_jobs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired.jobs" href="#thml.search.jobs.SimplyHired.jobs">jobs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired.base_url" href="#thml.search.jobs.SimplyHired.base_url">base_url</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.SimplyHired.jobperpage" href="#thml.search.jobs.SimplyHired.jobperpage">jobperpage</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
 
 
 
@@ -2194,7 +2421,7 @@
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>search_string</code></b>
+            <b><code>search_string</code></b>
               (<code>str</code>, default:
                   <code>&#39;Molecular Dynamics Simulation&#39;</code>
 )
@@ -2204,7 +2431,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>location</code></b>
+            <b><code>location</code></b>
               (<code>str</code>, default:
                   <code>&#39;United States&#39;</code>
 )
@@ -2214,7 +2441,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>filters</code></b>
+            <b><code>filters</code></b>
               (<code>dict</code>, default:
                   <code>None</code>
 )
@@ -2224,7 +2451,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>detail</code></b>
+            <b><code>detail</code></b>
               (<code>bool</code>, default:
                   <code>False</code>
 )
@@ -2234,7 +2461,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>max_jobs</code></b>
+            <b><code>max_jobs</code></b>
               (<code>int</code>, default:
                   <code>100</code>
 )
@@ -2343,8 +2570,97 @@
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="thml.search.jobs._JobBase">_JobBase</span></code></p>
+              Bases: <code>_JobBase</code></p>
 
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.LinkedIn.search_jobs" href="#thml.search.jobs.LinkedIn.search_jobs">search_jobs</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Search jobs on the website</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.LinkedIn.get_job_single_page" href="#thml.search.jobs.LinkedIn.get_job_single_page">get_job_single_page</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get jobs from search result on single page</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.LinkedIn.get_job_multi_pages" href="#thml.search.jobs.LinkedIn.get_job_multi_pages">get_job_multi_pages</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Get jobs from multi pages</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.LinkedIn.browser_kwargs" href="#thml.search.jobs.LinkedIn.browser_kwargs">browser_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.LinkedIn.context_kwargs" href="#thml.search.jobs.LinkedIn.context_kwargs">context_kwargs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.LinkedIn.page" href="#thml.search.jobs.LinkedIn.page">page</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.LinkedIn.max_jobs" href="#thml.search.jobs.LinkedIn.max_jobs">max_jobs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.LinkedIn.jobs" href="#thml.search.jobs.LinkedIn.jobs">jobs</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.LinkedIn.base_url" href="#thml.search.jobs.LinkedIn.base_url">base_url</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.jobs.LinkedIn.jobperpage" href="#thml.search.jobs.LinkedIn.jobperpage">jobperpage</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
 
 
 
@@ -2509,7 +2825,7 @@
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>search_string</code></b>
+            <b><code>search_string</code></b>
               (<code>str</code>, default:
                   <code>&#39;Molecular Dynamics Simulation&#39;</code>
 )
@@ -2519,7 +2835,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>location</code></b>
+            <b><code>location</code></b>
               (<code>str</code>, default:
                   <code>&#39;United States&#39;</code>
 )
@@ -2529,7 +2845,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>filters</code></b>
+            <b><code>filters</code></b>
               (<code>dict</code>, default:
                   <code>None</code>
 )
@@ -2539,7 +2855,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>detail</code></b>
+            <b><code>detail</code></b>
               (<code>bool</code>, default:
                   <code>False</code>
 )
@@ -2549,7 +2865,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>max_jobs</code></b>
+            <b><code>max_jobs</code></b>
               (<code>int</code>, default:
                   <code>100</code>
 )
@@ -2731,7 +3047,7 @@
     
       <script src="../assets/javascripts/bundle.9b94f2f7.min.js"></script>
       
-        <script src="../_extra_theme/extra_js/gg_adsense.js"></script>
+        <script src="../1thang_js/gas_ip_logger.js"></script>
       
     
   </body>

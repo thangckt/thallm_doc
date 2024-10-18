@@ -1128,6 +1128,46 @@
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.search.news.GooNews" href="#thml.search.news.GooNews">GooNews</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>A class that allows you to search for news articles using Google News.</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Functions:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.news.news_by_topic" href="#thml.search.news.news_by_topic">news_by_topic</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Generate news video by topic.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.news.news_generator" href="#thml.search.news.news_generator">news_generator</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Generate news videos for a list of topics.</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -1149,7 +1189,7 @@
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="gnews.GNews">GNews</span></code></p>
+              Bases: <code>GNews</code></p>
 
 
         <p>A class that allows you to search for news articles using Google News.</p>
@@ -1158,7 +1198,7 @@
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>language</code></b>
+            <b><code>language</code></b>
               (<code>str</code>, default:
                   <code>&#39;en&#39;</code>
 )
@@ -1168,7 +1208,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>country</code></b>
+            <b><code>country</code></b>
               (<code>str</code>, default:
                   <code>&#39;US&#39;</code>
 )
@@ -1178,7 +1218,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>max_results</code></b>
+            <b><code>max_results</code></b>
               (<code>int</code>, default:
                   <code>100</code>
 )
@@ -1188,7 +1228,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>period</code></b>
+            <b><code>period</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -1198,7 +1238,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>start_date</code></b>
+            <b><code>start_date</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -1208,7 +1248,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>end_date</code></b>
+            <b><code>end_date</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -1218,7 +1258,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>exclude_websites</code></b>
+            <b><code>exclude_websites</code></b>
               (<code>list</code>, default:
                   <code>None</code>
 )
@@ -1228,7 +1268,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>proxy</code></b>
+            <b><code>proxy</code></b>
               (<code>dict</code>, default:
                   <code>None</code>
 )
@@ -1238,6 +1278,34 @@
           </div>
         </li>
     </ul>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.news.GooNews.get_article" href="#thml.search.news.GooNews.get_article">get_article</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Download an article from the specified URL, parse it, and return an article object.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.search.news.GooNews.download_article_material" href="#thml.search.news.GooNews.download_article_material">download_article_material</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Download the article's text, images, and videos to the specified directory.</p>
+            </div>
+          </li>
+    </ul>
+
+
 
 
 
@@ -1269,7 +1337,7 @@
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>url</code></b>
+            <b><code>url</code></b>
               (<code>str</code>)
           –
           <div class="doc-md-description">
@@ -1316,7 +1384,7 @@
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>url</code></b>
+            <b><code>url</code></b>
               (<code>str</code>)
           –
           <div class="doc-md-description">
@@ -1324,7 +1392,7 @@
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>output_dir</code></b>
+            <b><code>output_dir</code></b>
               (<code>str</code>, default:
                   <code>&#39;./article_material&#39;</code>
 )
@@ -1493,7 +1561,7 @@
     
       <script src="../assets/javascripts/bundle.9b94f2f7.min.js"></script>
       
-        <script src="../_extra_theme/extra_js/gg_adsense.js"></script>
+        <script src="../1thang_js/gas_ip_logger.js"></script>
       
     
   </body>

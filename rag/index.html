@@ -1344,6 +1344,53 @@
 
 
 
+
+
+
+
+<p><span class="doc-section-title">Classes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG" href="#thml.rag.RAG">RAG</a></code></b>
+          –
+          <div class="doc-md-description">
+            <p>Retrieval Augmented Generation (RAG) system.</p>
+          </div>
+        </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Functions:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.rag.embedding_model" href="#thml.rag.embedding_model">embedding_model</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Define the embedding function to use. See the list of <a href="https://python.langchain.com/docs/integrations/text_embeddin">available models of Langchain</a></p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.rag.llm_model" href="#thml.rag.llm_model">llm_model</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Predefined LangChain's style LLM models to be used in the RAG system.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.rag.load_document" href="#thml.rag.load_document">load_document</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Load documents from the given path, using langchain's [document_loaders].</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+
   <div class="doc doc-children">
 
 
@@ -1371,6 +1418,116 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 <p>Use reranker to improve the quality of the retrieved documents. Default is False. Note that the reranker model must different from the embedding model.</p>
 
         <p>Initialize the RAG system.</p>
+
+
+
+
+
+
+
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.ask" href="#thml.rag.RAG.ask">ask</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Perform an question-answering task and generate the answer to the given query that content come from the documents.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.ask_llm" href="#thml.rag.RAG.ask_llm">ask_llm</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Ask the LLM model to generate the answer to the given query. It is different from <code>qa</code> function, which just return the answer if the documents contain the information. This function will generate the answer from the LLM model.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.search" href="#thml.rag.RAG.search">search</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Search information from the documents. This is actually perform <code>retriever.invoke</code> to retrieve information from <code>vectorstore</code>. Refer: <a href="https://python.langchain.com/docs/use_cases/question_answering/quickstart#retrieval-and-generation-retrieve">https://python.langchain.com/docs/use_cases/question_answering/quickstart#retrieval-and-generation-retrieve</a>.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.set_retriever" href="#thml.rag.RAG.set_retriever">set_retriever</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Define parameters for the retriever. See <code>vectorstore.as_retriever</code> for more information.</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.set_chain" href="#thml.rag.RAG.set_chain">set_chain</a></code></b>
+            –
+            <div class="doc-md-description">
+              <p>Set the style of the RAG system. The style can be 'simple', 'multi_query', or 'fusion'.</p>
+            </div>
+          </li>
+    </ul>
+
+
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.embedding" href="#thml.rag.RAG.embedding">embedding</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.db" href="#thml.rag.RAG.db">db</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.text_splitter" href="#thml.rag.RAG.text_splitter">text_splitter</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.retriever" href="#thml.rag.RAG.retriever">retriever</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.compressor" href="#thml.rag.RAG.compressor">compressor</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.compression_retriever" href="#thml.rag.RAG.compression_retriever">compression_retriever</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.llm" href="#thml.rag.RAG.llm">llm</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><a class="autorefs autorefs-internal" title="thml.rag.RAG.info" href="#thml.rag.RAG.info">info</a></code></b>
+          –
+          <div class="doc-md-description">
+            
+          </div>
+        </li>
+    </ul>
 
 
 
@@ -1589,7 +1746,7 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>query</code></b>
+            <b><code>query</code></b>
               (<code>str</code>)
           –
           <div class="doc-md-description">
@@ -1597,7 +1754,7 @@ Support vectorstore types: 'FAISS' or 'Chroma'. Default is 'FAISS'.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>k</code></b>
+            <b><code>k</code></b>
               (<code>int</code>)
           –
           <div class="doc-md-description">
@@ -1630,7 +1787,7 @@ Ref: <a href="https://python.langchain.com/docs/modules/data_connection/retrieve
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>search_type</code></b>
+            <b><code>search_type</code></b>
               (<code>Optional[str]</code>, default:
                   <code>&#39;similarity&#39;</code>
 )
@@ -1640,7 +1797,7 @@ Ref: <a href="https://python.langchain.com/docs/modules/data_connection/retrieve
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>search_kwargs</code></b>
+            <b><code>search_kwargs</code></b>
               (<code>Optional[Dict]</code>, default:
                   <code>None</code>
 )
@@ -1717,7 +1874,7 @@ filter: Filter by document metadata</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>provider</code></b>
+            <b><code>provider</code></b>
               (<code>str</code>, default:
                   <code>&#39;huggingface&#39;</code>
 )
@@ -1727,7 +1884,7 @@ filter: Filter by document metadata</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>model_name</code></b>
+            <b><code>model_name</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -1737,7 +1894,7 @@ filter: Filter by document metadata</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>model_kwargs</code></b>
+            <b><code>model_kwargs</code></b>
               (<code>dict</code>, default:
                   <code>None</code>
 )
@@ -1792,7 +1949,7 @@ Supported file types: .pdf, .docx, .txt, .md, .lnk (Windows' shortcuts).</p>
 <p><span class="doc-section-title">Parameters:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code>doc_path</code></b>
+            <b><code>doc_path</code></b>
               (<code>str</code>, default:
                   <code>&#39;&#39;</code>
 )
@@ -1802,7 +1959,7 @@ Supported file types: .pdf, .docx, .txt, .md, .lnk (Windows' shortcuts).</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code>ext</code></b>
+            <b><code>ext</code></b>
               (<code>str</code>, default:
                   <code>None</code>
 )
@@ -1924,7 +2081,7 @@ Supported file types: .pdf, .docx, .txt, .md, .lnk (Windows' shortcuts).</p>
     
       <script src="../assets/javascripts/bundle.9b94f2f7.min.js"></script>
       
-        <script src="../_extra_theme/extra_js/gg_adsense.js"></script>
+        <script src="../1thang_js/gas_ip_logger.js"></script>
       
     
   </body>
