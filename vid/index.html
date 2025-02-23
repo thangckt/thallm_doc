@@ -4122,7 +4122,7 @@ download: Download html, pdf or image,    Takes a set of urls and tries to downl
 
 
 <h4 id="thml.video.tts.tts_edge" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tts_edge</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">voice_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;vi-VN-NamMinhNeural &#39;</span><span class="p">,</span> <span class="n">audio_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;voice.mp3&#39;</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tts_edge</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">voice</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;vi-VN-NamMinhNeural&#39;</span><span class="p">,</span> <span class="n">rate</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">volume</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">pitch</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">audio_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;voice.mp3&#39;</span><span class="p">)</span></code>
 
 <a href="#thml.video.tts.tts_edge" class="headerlink" title="Permanent link">&para;</a></h4>
 
@@ -4132,8 +4132,11 @@ download: Download html, pdf or image,    Takes a set of urls and tries to downl
         <p>TTS using Edge browser.
 Args:
     text (str): text string
-    voice_name (str): name of voice.
-    audio_file (str): file name to save audio</p>
+    voice (str): name of voice.
+    rate (int): voice speed, form in Pos/Neg percentage. E.g., "+5%" or "-10%"
+    volume (int): voice volume, form in Pos/Neg percentage.
+    pitch (int): voice pitch, form in Pos/Neg Hz. E.g., "+5Hz" or "-10Hz". Pitch determine how high or low a sound is (determined by the frequency of the sound waves). Adjusting the pitch can change the perceived tone or melody. For example, a high-pitched sound might be like a whistle or a child's voice, while a low-pitched sound might resemble a bass drum or an adult male voice.
+    audio_file (str): name of output audio file.</p>
 
     </div>
 
